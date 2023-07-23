@@ -8,7 +8,7 @@ following installed:
     MySQL Server
     Any browser (Google Chrome recommended)
 
-Inside the backend folder, run the following commands in your Command Prompt/Terminal:
+Navigate to the project folder named backend with Command Prompt/Terminal and type in:
 
     npm install mysql2
     npm install express
@@ -23,7 +23,7 @@ Watch this guide on how to set up the MySQL server: https://www.youtube.com/watc
 
 Now you need to setup a database.
 
-To do so, open the connection in MySQL Workbench and in the Query tab type in:
+To do so, open the connection in MySQL Workbench and in the Query tab type in (can also be done with the MySQL shell):
 
     CREATE DATABASE booking;
 
@@ -56,8 +56,8 @@ user is on line 21, password is line 22.
 
 const pool = mysql.createPool({
     host: '127.0.0.1',
-    user: 'root', <------ CHANGE TO YOUR USERNAME
-    password: 'root', <------ CHANGE TO YOUR PASSWORD
+    user: 'root', <------ CHANGE TO YOUR MYSQL SERVER USERNAME
+    password: 'root', <------ CHANGE TO YOUR MYSQL SERVER PASSWORD
     database: 'bookingdb'
 }).promise()
 
@@ -76,7 +76,7 @@ Start the Node.js server:
 
 Open another Command Prompt/Terminal and navigate to the frontend project folder called booking-system:
 
-    cd C:/Users/YOUR_USER_NAME/Desktop/Jostein Harrang - Fullstack developer case - Booking System - 24.07.2023/booking-system
+    cd C:/Users/YOUR_USER_NAME/Desktop/Jostein Harrang - Fullstack developer case - Booking System - 24.07.2023/booking-system/
 
 Start the React application:
 
